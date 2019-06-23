@@ -78,10 +78,10 @@ pre code.hljs {
 		background-position: 50% 50%;
 		background-size: cover;
 		.title {
-			font-size: modular-scale(1);
+			font-size: modular-scale(6);
 		}
 		.subtitle, .info {
-			font-size: modular-scale(6);
+			font-size: modular-scale(1);
 		}
 	}
 	.scrim {
@@ -212,7 +212,7 @@ pre code.hljs {
 		.post-date {
 			@include span-columns(6);
 			text-align: left;
-			font-size: 0.9em;
+			font-size: 5.0em;//0.9em;
 		}
 		.post-categories {
 			@include span-columns(6);
