@@ -35,7 +35,7 @@ code {
 }
 
 pre code.hljs {
-	font-size: modular-scale(3);
+	font-size: modular-scale(3); //modular-scale(-1);
 }
 
 .page-divider {
@@ -218,7 +218,7 @@ pre code.hljs {
 			@include span-columns(6);
 			margin-right: 0;
 			text-align: right;
-			font-size: 0.9em;
+			font-size: 5.0em; //0.9em;
 		}
 	}
 	.pagination {
