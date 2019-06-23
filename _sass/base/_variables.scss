@@ -6,7 +6,7 @@ $base-font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial"
 $heading-font-family: "Roboto Slab", "Helvetica Neue", "Helvetica", "Arial", sans-serif; // $base-font-family;
 
 // Font Sizes
-$base-font-size: 40px;//$em-base; // 16px
+$base-font-size: $em-base; // 16px
 
 // Adjust modular scale ratio
 $modular-scale-ratio: $minor-third;
@@ -40,7 +40,7 @@ $bc-red: #bc0000;
 // Font Colors
 $base-background-color: #fff;
 $base-font-color: $dark-gray;
-$action-color: $dark-gray;
+$action-color: $turquoise;
 $highlight-color: tint($action-color, 33%);
 
 // Border
