@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Dummy Post"
-date:   2015-04-18 08:43:59
-author: Ben Centra
+title:  "first post"
+date:   2019-06-23 12:34:59
+author: Terry Ryu
 categories: Dummy
 ---
 
