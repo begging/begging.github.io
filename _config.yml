@@ -28,7 +28,7 @@ markdown: kramdown
 paginate: 5
 paginate_path: "/page:num/"
 inter_post_navigation: false
-highlightjs_theme: "monokai"
+highlightjs_theme: "Zenburn"
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
 jekyll-archives:
