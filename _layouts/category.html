@@ -14,7 +14,7 @@ layout: default
 {% include get_sub_category.html %}
 
 {% for category in sub_categories %}
-  <h2>{{ category}}</h2>
+  <h2>{{ category | capitalize }}</h2>
   <ul class="posts-list">
   {% for post in site.categories[category] %}
     <li>

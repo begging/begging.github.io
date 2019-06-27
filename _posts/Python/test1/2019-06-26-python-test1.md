@@ -3,7 +3,7 @@ layout: post
 title: Python zztest1
 comments: true
 author: Terry Ryu
-tag: [Python, test12]
+tag: [Python, Test12]
 category: [Python, test1]
 ---
 
