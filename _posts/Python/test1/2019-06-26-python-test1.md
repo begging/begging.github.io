@@ -2,7 +2,8 @@
 layout: post
 title: Python zztest1
 comments: true
-author: Ben Centra
+author: Terry Ryu
+tag: [Python, test12]
 category: [Python, test1]
 ---
 
