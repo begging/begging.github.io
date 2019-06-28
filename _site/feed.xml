@@ -6,8 +6,8 @@
 </description>
     <link>http://terryryu.github.io/</link>
     <atom:link href="http://terryryu.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 28 Jun 2019 19:49:10 +0900</pubDate>
-    <lastBuildDate>Fri, 28 Jun 2019 19:49:10 +0900</lastBuildDate>
+    <pubDate>Fri, 28 Jun 2019 20:55:37 +0900</pubDate>
+    <lastBuildDate>Fri, 28 Jun 2019 20:55:37 +0900</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -106,15 +106,17 @@ function demo(string, times) {
 
 </description>
         <pubDate>Thu, 27 Jun 2019 17:43:59 +0900</pubDate>
-        <link>http://terryryu.github.io/jekyll/2019/06/27/test2.html</link>
-        <guid isPermaLink="true">http://terryryu.github.io/jekyll/2019/06/27/test2.html</guid>
+        <link>http://terryryu.github.io/jekyll/test2/2019/06/27/test2.html</link>
+        <guid isPermaLink="true">http://terryryu.github.io/jekyll/test2/2019/06/27/test2.html</guid>
         
         <category>jekyll</category>
         
-        <category>welcome</category>
+        <category>Welcome</category>
         
         
         <category>Jekyll</category>
+        
+        <category>Test2</category>
         
       </item>
     

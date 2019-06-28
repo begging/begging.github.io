@@ -46,6 +46,10 @@ disqus_shortname: terryryu-github-io
 # Google analytics
 # ga_tracking_id: "UA-XXXX-1"
 
+my_categories:
+  - Python
+  - Algorithm
+
 # Category descriptions (for archive pages)
 descriptions:
   - cat: jekyll

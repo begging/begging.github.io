@@ -6,12 +6,10 @@ permalink: /tags/
 
 <ul class="tag-cloud">
 {% for tag in site.tags %}
-  <span style="font-size: {{ tag | last | size | times: 200 | divided_by: site.tags.size | plus: 70  }}%">
-    <strong>
-    <a href="#{{ tag | first | slugize }}">
+  <span style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 75  }}%">
+    <a href="#{{ tag | first | slugize | downcase }}">
       {{ tag | first | downcase}}
     </a> &nbsp;&nbsp;
-  </strong>
   </span>
 {% endfor %}
 </ul>
@@ -20,7 +18,7 @@ permalink: /tags/
 
 {% for tag in site.tags %}
   {% capture tag_name %}{{ tag | first }}{% endcapture %}
-  <h2 id="{{ tag_name }}">{{ tag_name | downcase}}</h2>
+  <h2 id="{{ tag_name | downcase }}">{{ tag_name | downcase}}</h2>
 
   <ul class="posts-list">
   {% for post in site.tags[tag_name] %}
