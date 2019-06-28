@@ -18,15 +18,29 @@ layout: default
 {% unless page.cover %} {% include page_divider.html %} {% endunless %}
 
 <section class="post-meta">
-  <div class="post-date">{{ page.date | date: "%B %-d, %Y" }}</div>
+  <div class="post-date">{{ page.date | date_to_long_string }}</div>
   <div class="post-categories">
+
+  {% assign cat_path = "" %}
   {% if page.categories.size > 0 %}in {% for cat in page.categories %}
+
     {% if site.jekyll-archives %}
-    <a href="{{ site.baseurl }}/category/{{ cat }}">{{ cat | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
+      <a href="{{ site.baseurl }}/category/{{ cat }}">{{ cat }}</a>
+      {% if forloop.last == false %}, {% endif %}
+
     {% else %}
-    <a href="{{ site.baseurl }}/posts/#{{ cat }}">{{ cat | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
+      {% if forloop.last == false %}
+        {% assign cat_path = cat_path | append: "/" | append: cat | downcase %}
+      {% else %}
+        {% assign cat_path = cat_path | append: "/#" | append: cat | downcase %}
+      {% endif %}
+  
+      <a href="{{cat_path}}">{{ cat }}</a>
+      {% if forloop.last == false %}, {% endif %}
+    
     {% endif %}
   {% endfor %}{% endif %}
+
   </div>
 </section>
 
@@ -34,13 +48,14 @@ layout: default
   {{ content }}
 </article>
 
-{% if site.jekyll-archives %}
 {% if page.tags.size > 0 %}
 <section class="tags">
-  <strong>Tags:</strong> {% for tag in page.tags %}<a href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a>{% if forloop.last == false %},&nbsp;{% endif %}{% endfor %}
+  <strong>Tags:</strong> {% for tag in page.tags %}<a href="{{ site.baseurl }}/tags/#{{ tag }}">{{ tag | downcase }}</a>{% if forloop.last == false %},&nbsp;{% endif %}{% endfor %}
 </section>
 {% endif %}
-{% endif %}
+<br>
+<!-- {% if site.jekyll-archives %} -->
+<!-- {% endif %} -->
 
 {% if site.inter_post_navigation == true %}
 	<section class="post-navigation">

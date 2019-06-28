@@ -6,25 +6,32 @@ permalink: /tags/
 
 <ul class="tag-cloud">
 {% for tag in site.tags %}
-  <span style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 70  }}%">
+  <span style="font-size: {{ tag | last | size | times: 200 | divided_by: site.tags.size | plus: 70  }}%">
+    <strong>
     <a href="#{{ tag | first | slugize }}">
-      {{ tag | first }}
+      {{ tag | first | downcase}}
     </a> &nbsp;&nbsp;
+  </strong>
   </span>
 {% endfor %}
 </ul>
+<br>
 
-<div id="archives">
+
 {% for tag in site.tags %}
-  <div class="archive-group">
-    {% capture tag_name %}{{ tag | first }}{% endcapture %}
-    <h2 id="#{{ tag_name | slugize }}">{{ tag_name }}</h2>
-    <a name="{{ tag_name | slugize }}"></a>
-    {% for post in site.tags[tag_name] %}
-    <article class="archive-item">
-      <h4><a href="{{ root_url }}{{ post.url }}">{{post.title}}</a></h4>
-    </article>
-    {% endfor %}
-  </div>
+  {% capture tag_name %}{{ tag | first }}{% endcapture %}
+  <h2 id="{{ tag_name }}">{{ tag_name | downcase}}</h2>
+
+  <ul class="posts-list">
+  {% for post in site.tags[tag_name] %}
+    <li>
+      <strong>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </strong>
+      <span class="post-date">- {{ post.date | date_to_long_string }}</span>
+    </li>
+  {% endfor %}
+  </ul>
+  {% if forloop.last == false %}<hr>{% endif %}
 {% endfor %}
-</div>
+<br>

@@ -2,8 +2,8 @@
 {% for post in site.categories[page.category] %}
   {% for category in post.categories %}
     {% if category != page.category %}
-      {% assign downcase_category = category | downcase %}
-      {% assign sub_categories = sub_categories | push: downcase_category %}
+      <!-- {% assign downcase_category = category %} -->
+      {% assign sub_categories = sub_categories | push: category %}
     {% endif %}
   {% endfor %}
 {% endfor %}

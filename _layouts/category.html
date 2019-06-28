@@ -9,14 +9,44 @@ layout: default
     <h1 class="post-title">{{ page.category }}</h1>
   </header>
 
-{% include page_divider.html %}
+  {% include page_divider.html %}
+  
+  <!-- <h2 id="{{ ETC }}">ETC</h2> -->
 
-{% include get_sub_category.html %}
-
-{% for category in sub_categories %}
-  <h2>{{ category | capitalize }}</h2>
+  {% assign sub_categories = "" | split: "" %}
+  {% assign draw_line = false %}
   <ul class="posts-list">
-  {% for post in site.categories[category] %}
+    {% for post in site.categories[page.category] %}
+
+      {% if post.categories.size == 1 %}
+
+        <li>
+        <strong><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></strong>
+        <span class="post-date">- {{ post.date | date_to_long_string }}</span>
+        </li>
+        {% assign draw_line = true %}
+
+      {% else %}
+        {% for category in post.categories %}
+          {% if category != page.category %}
+            {% assign sub_categories = sub_categories | push: category %}
+          {% endif %}
+        {% endfor %}  
+        {% assign sub_categories = sub_categories | uniq %}
+        {% assign sub_categories = sub_categories | sort %}
+
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  {% if draw_line %}
+    <hr>
+  {% endif %}
+
+  {% for sub_category in sub_categories %}
+  <h2 id="{{ sub_category }}">{{ sub_category }}</h2>
+  <ul class="posts-list">
+  {% for post in site.categories[sub_category] %}
     <li>
       <strong>
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -28,6 +58,9 @@ layout: default
   {% if forloop.last == false %}<hr>{% endif %}
 {% endfor %}
 <br>
+
+
+
 
 
 </div>

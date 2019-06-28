@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://terryryu.github.io/python/2019/06/28/write-python.html</loc>
+<lastmod>2019-06-28T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://terryryu.github.io/jekyll/2019/06/27/test2.html</loc>
+<lastmod>2019-06-27T17:43:59+09:00</lastmod>
+</url>
+<url>
+<loc>http://terryryu.github.io/python/2019/06/27/test2.html</loc>
+<lastmod>2019-06-27T00:00:00+09:00</lastmod>
+</url>
+<url>
 <loc>http://terryryu.github.io/python/test2/2019/06/26/python-test2.html</loc>
 <lastmod>2019-06-26T00:00:00+09:00</lastmod>
 </url>
@@ -9,8 +21,16 @@
 <lastmod>2019-06-26T00:00:00+09:00</lastmod>
 </url>
 <url>
+<loc>http://terryryu.github.io/python/2019/06/26/test2.html</loc>
+<lastmod>2019-06-26T00:00:00+09:00</lastmod>
+</url>
+<url>
 <loc>http://terryryu.github.io/algorithm/programmers/2019/06/26/algorithm-test1.html</loc>
 <lastmod>2019-06-26T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://terryryu.github.io/jekyll/2019/04/18/test1.html</loc>
+<lastmod>2019-04-18T17:43:59+09:00</lastmod>
 </url>
 <url>
 <loc>http://terryryu.github.io/jekyll/2015/04/18/welcome-to-jekyll.html</loc>

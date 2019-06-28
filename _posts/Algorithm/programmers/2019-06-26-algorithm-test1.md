@@ -4,7 +4,7 @@ title: Python zztest3
 comments: true
 author: Ben Centra
 tags: [Algorithm, test]
-category: [Algorithm, programmers]
+category: [Algorithm, Programmers]
 ---
 
 This is just a dummy post. Lorem ipsum and all the rest.

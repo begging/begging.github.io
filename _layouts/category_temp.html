@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="wrapper">
+<div class="page">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.category }}</h1>
+  </header>
+
+{% include page_divider.html %}
+
+{% include get_sub_category.html %}
+
+{% for sub_category in sub_categories %}
+  <h2 id="{{ sub_category }}">{{ sub_category }}</h2>
+  <ul class="posts-list">
+  {% for post in site.categories[sub_category] %}
+    <li>
+      <strong>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </strong>
+      <span class="post-date">- {{ post.date | date_to_long_string }}</span>
+    </li>
+  {% endfor %}
+  </ul>
+  {% if forloop.last == false %}<hr>{% endif %}
+{% endfor %}
+<br>
+
+</div>
+</div>
