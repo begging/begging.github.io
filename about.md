@@ -6,4 +6,4 @@ permalink: /about/
 
 <!-- <img src="{{ site.baseurl }}/assets/profile-placeholder.gif" title="Profile Picture" class="profile"> -->
 
-{{site.my_categories}}
+Hi
