@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '[Level1] Gym clothes'
+title: '[Level 1] Gym clothes'
 comments: true
 author: Terry Ryu
 date:   2019-06-30 02:45:00 +0900
@@ -10,7 +10,7 @@ category: [Algorithm, Programmers]
 
 - ## Question [link (Korean)](https://programmers.co.kr/learn/courses/30/lessons/42862)
 <hr/>
-- ## Answer 
+- ## Answer
 
 ```Python3
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '[Level1] Kth number'
+title: '[Level 1] Kth number'
 comments: true
 author: Terry Ryu
 date:   2019-06-27 20:00:00 +0900
@@ -30,11 +30,11 @@ def solution(array, commands):
 
 ```
 <hr/>
-- ## Other Answer 
+- ## Other Answer
 
 ```Python3
 
 def other_solution(array, commands):
 	return list(map(lambda x:sorted(array[x[0]-1:x[1]])[x[2]-1], commands))
-	
+
 ```
