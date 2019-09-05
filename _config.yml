@@ -11,8 +11,8 @@ exclude:
 # Site settings
 title: My First Blog
 subtitle: "Hi"
-email: email@test.com
-name: name test
+email: cjwoo3221@gmail.com
+name: Terry Ryu
 description: >
   description test
 # Base URL of site (i.e. /blog). It should always start with a slash,
@@ -47,9 +47,10 @@ disqus_shortname: terryryu-github-io
 # ga_tracking_id: "UA-XXXX-1"
 
 my_categories:
-  - Python
   - Algorithm
-  - OS
+  - Python
+  - Mac
+  - ETC
 
 # Category descriptions (for archive pages)
 descriptions:
