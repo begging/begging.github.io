@@ -11,15 +11,15 @@ exclude:
 # Site settings
 title: My First Blog
 subtitle: "Hi"
-email: cjwoo3221@gmail.com
-name: Terry Ryu
+email: rudy.dev.kor@gmail.com
+name: Rudy
 description: >
   description test
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://terryryu.github.io" # the base hostname & protocol for your site
+url: "http://rudy.github.io" # the base hostname & protocol for your site
 cover: "/assets/header_image.jpg"
 logo: "/assets/logo.png"
 
@@ -28,7 +28,8 @@ markdown: kramdown
 paginate: 5
 paginate_path: "/page:num/"
 inter_post_navigation: false
-highlightjs_theme: "monokai-sublime"
+#highlightjs_theme: "monokai-sublime"
+highlightjs_theme: "github"
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
 # jekyll-archives:
@@ -41,14 +42,14 @@ highlightjs_theme: "monokai-sublime"
 #     tag: '/tag/:name/'
 
 # Disqus comments
-disqus_shortname: terryryu-github-io
+disqus_shortname: rudy-github-io
 
 # Google analytics
 # ga_tracking_id: "UA-XXXX-1"
 
 my_categories:
-  - Algorithm
   - Python
+  - Algorithm
   - Mac
   - ETC
 
