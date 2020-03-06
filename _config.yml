@@ -19,7 +19,7 @@ description: >
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://rudy.github.io" # the base hostname & protocol for your site
+url: "http://begging.github.io" # the base hostname & protocol for your site
 cover: "/assets/header_image.jpg"
 logo: "/assets/logo.png"
 
@@ -42,7 +42,7 @@ highlightjs_theme: "github"
 #     tag: '/tag/:name/'
 
 # Disqus comments
-disqus_shortname: rudy-github-io
+disqus_shortname: begging-github-io
 
 # Google analytics
 # ga_tracking_id: "UA-XXXX-1"
